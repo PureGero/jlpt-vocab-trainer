@@ -88,17 +88,19 @@ function Game(props: GameProps) {
       options.push(selectVocab(createVocabListFromLevel(vocab?.level), options));
     }
 
-
     setRound({
       vocab,
       options,
     });
+
+    window.localStorage.setItem('completed', ((parseInt(window.localStorage.getItem('completed') || '0') || 0) + 1).toString());
   }, [vocabRemaining]);
 
   const onIncorrect = () => {
     vocabRemaining.splice(2, 0, round?.vocab!);
     vocabRemaining.splice(10, 0, round?.vocab!);
     setIncorrect(incorrect + 1);
+    window.localStorage.setItem('incorrect', ((parseInt(window.localStorage.getItem('incorrect') || '0') || 0) + 1).toString());
   }
 
   useEffect(() => {
