@@ -8,7 +8,11 @@ const Center = styled.div`
   flex-direction: column;
   justify-content: center;
   margin: 70px auto 0;
-  width: 800px;
+  max-width: 800px;
+
+  @media (max-width: 800px) {
+    padding: 15px;
+  }
 `;
 
 const Background = styled.div`
@@ -22,6 +26,10 @@ const Word = styled.div`
   font-size: 4em;
   text-align: center;
   padding: 0px;
+
+  @media (max-width: 800px) {
+    font-size: 3em;
+  }
 `;
 
 const Furigana = styled.div`
@@ -29,6 +37,10 @@ const Furigana = styled.div`
   font-size: 2em;
   text-align: center;
   padding: 0px 0px 10px;
+
+  @media (max-width: 800px) {
+    font-size: 1.4em;
+  }
 `;
 
 const ExampleSentence = styled.div`
@@ -36,6 +48,10 @@ const ExampleSentence = styled.div`
   font-size: 2em;
   text-align: center;
   padding: 15px 0 0;
+
+  @media (max-width: 800px) {
+    font-size: 1.6em;
+  }
 `;
 
 const ExampleSentenceTranslation = styled.div`
@@ -43,20 +59,35 @@ const ExampleSentenceTranslation = styled.div`
   font-size: 1.5em;
   text-align: center;
   padding: 0;
+
+  @media (max-width: 800px) {
+    font-size: 1.2em;
+  }
+`;
+
+const NextButtonContainer = styled.div`
+  display: flex;
+  margin: 20px 0;
+  justify-content: center;
 `;
 
 const NextButton = styled.button`
   background-color: #d4ecff;
   border: 1px solid black;
   border-radius: 10px;
+  color: inherit;
   font-size: 1.5em;
-  margin: 20px auto;
   padding: 10px 20px;
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
 
   &:hover {
     background-color: #e4f7ff;
     cursor: pointer;
+  }
+  
+  @media (max-width: 400px) {
+    margin: 0 20px;
   }
 `;
 
@@ -109,7 +140,7 @@ function Round(props: RoundProps) {
 
         <ExampleSentence>{correct != null ? props.roundInfo.vocab?.vocab.example.sentence : '\u00A0'}</ExampleSentence>
         <ExampleSentenceTranslation>{correct != null ? props.roundInfo.vocab?.vocab.example.translation : '\u00A0'}</ExampleSentenceTranslation>
-        {correct != null ? <NextButton onClick={props.nextRound}>Next &gt;</NextButton> : null}
+        {correct != null ? <NextButtonContainer><NextButton onClick={props.nextRound}>Next &gt;</NextButton></NextButtonContainer> : null}
       </Center>
     </Background>
   );

@@ -15,10 +15,22 @@ const Container = styled.div`
     background-color: #e4f7ff;
     cursor: pointer;
   }
+
+  @media (max-width: 800px) {
+    font-size: 1.2em;
+    flex: 1 0 34%;
+    padding: 0;
+    margin: 3px;
+  }
 `;
 
 const Answer = styled.div`
   font-size: 0.8em;
+
+  @media (max-width: 800px) {
+    margin-top: -5px;
+    padding-bottom: 5px;
+  }
 `;
 
 interface OptionProps {

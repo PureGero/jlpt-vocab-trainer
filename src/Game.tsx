@@ -10,6 +10,10 @@ const WordsLeft = styled.div`
   color: white;
   font-size: 1.2em;
   padding: 10px;
+
+  @media (max-width: 800px) {
+    font-size: 1em;
+  }
 `;
 
 export interface GameVocab {
