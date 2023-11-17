@@ -12,6 +12,7 @@ const Center = styled.div`
 
   @media (max-width: 800px) {
     padding: 15px;
+    margin: 0 auto 0;
   }
 `;
 
