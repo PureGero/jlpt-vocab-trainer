@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { RoundInfo } from './Game';
 import styled from 'styled-components';
 import Options from './Options';
+import GamemodeContext from './GamemodeContext';
 
 const Center = styled.div`
   display: flex;
@@ -101,6 +102,8 @@ interface RoundProps {
 function Round(props: RoundProps) {
   const [correct, setCorrect] = useState<boolean | null>(null);
 
+  const gamemode = useContext(GamemodeContext);
+
   useEffect(() => {
     setCorrect(null);
   }, [props.roundInfo]);
@@ -129,7 +132,7 @@ function Round(props: RoundProps) {
     <Background>
       <Center>
         <Word>{props.roundInfo.vocab?.vocab.word}</Word>
-        <Furigana>{correct != null ? props.roundInfo.vocab?.vocab.furigana : '\u00A0'}</Furigana>
+        <Furigana>{correct != null ? (gamemode.furiganaMode ? props.roundInfo.vocab?.vocab.translation : props.roundInfo.vocab?.vocab.furigana) : '\u00A0'}</Furigana>
 
         <Options options={props.roundInfo.options} correctOption={props.roundInfo.vocab?.vocab} setCorrect={correct => {
           if (!correct) {

@@ -1,3 +1,5 @@
+import { useContext } from 'react';
+import GamemodeContext from './GamemodeContext';
 import { Vocab } from './vocab';
 import styled from 'styled-components';
 
@@ -41,6 +43,8 @@ interface OptionProps {
 }
 
 function Option(props: OptionProps) {
+  const gamemode = useContext(GamemodeContext);
+
   let color = '';
   if (props.correct != null && props.theAnswer) {
     color = '#74e800';
@@ -51,7 +55,7 @@ function Option(props: OptionProps) {
   return (
     <Container onClick={() => props.correct == null ? props.setCorrect(props.theAnswer) : null} style={ {backgroundColor: color} }>
       <Answer>&nbsp;</Answer>
-      { props.vocab.translation }
+      { gamemode.furiganaMode ? props.vocab.furigana : props.vocab.translation }
       { props.correct != null && !props.theAnswer ? <Answer>{ props.vocab.word }</Answer> : <Answer>&nbsp;</Answer> }
     </Container>
   );

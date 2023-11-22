@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import Game, { GameVocab } from './Game';
 import fetchVocab from './vocab';
 import { useEffect, useState } from 'react';
+import GamemodeContext, { GamemodeContextType } from './GamemodeContext';
+import GamemodeSelector from './GamemodeSelector';
 
 const Version = styled.div`
   position: absolute;
@@ -18,6 +20,9 @@ interface AppProps {
 
 function App(props: AppProps) {
   const [vocabList, setVocabList] = useState<GameVocab[]>([]);
+  const [gamemode, setGamemode] = useState<GamemodeContextType>({
+    furiganaMode: null,
+  });
 
   const initVocab = async () => {
     const vocab = await fetchVocab();
@@ -43,7 +48,18 @@ function App(props: AppProps) {
 
   return (
     <div>
-      <Game vocab={vocabList} />
+      <GamemodeContext.Provider value={gamemode}>
+        {
+          vocabList.length === 0 ? (
+            <div>Loading...</div>
+          ) :
+          gamemode.furiganaMode == null ? (
+            <GamemodeSelector vocabList={vocabList} setVocabList={setVocabList} setGamemode={setGamemode} />
+          ) : (
+            <Game vocab={vocabList} />
+          )
+        }
+      </GamemodeContext.Provider>
       <Version>Version: {process.env.REACT_APP_GIT_SHA}</Version>
     </div>
   );
