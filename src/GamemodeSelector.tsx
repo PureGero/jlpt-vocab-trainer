@@ -28,6 +28,7 @@ const Title = styled.div`
   font-size: 4em;
   text-align: center;
   padding: 0px;
+  margin-bottom: 50px;
 
   @media (max-width: 800px) {
     font-size: 3em;
@@ -105,10 +106,10 @@ function GamemodeSelector(props: GamemodeSelectorProps) {
   return (
     <Background>
       <Center>
-        <Title>日本語総まとめ 語彙 N2</Title>
         {
           gamemode.furiganaMode == null ? (
             <div>
+              <Title>日本語総まとめ 語彙 N2</Title>
               <ButtonContainer><Button onClick={setFurigana(false)}>Test on English Translation</Button></ButtonContainer>
               <ButtonContainer><Button onClick={setFurigana(true)}>Test on Kanji Reading</Button></ButtonContainer>
             </div>
