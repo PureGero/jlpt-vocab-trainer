@@ -1,64 +1,191 @@
 一日目
-思いやりがある,おもいやりがある,considerate,思いやりがある人,a considerate person
-若々しい,わかわかしい,youthful,若々しい人,a youthful person
-生き生きとした,いきいきとした,lively,生き生きとした人,a lively person
-朗らか,ほがらか,cheerful,朗らかな人,a cheerful person
-爽やか,さわやか,refreshing,爽やかな人,a refreshing person
-人懐っこい,ひとなつっこい,friendly,人懐っこい人,a friendly person
-無邪気,むじゃき,innocent,無邪気な人,an innocent person
-マナーがいい,まなーがいい,well-mannered,マナーがいい人,a well-mannered person
-センスがいい,せんすがいい,have good taste,センスがいい人,a person with good taste
-要領がいい,ようりょうがいい,efficient,要領がいい人,an efficient person
-穏やか,おだやか,mild,穏やかな人,a mild person
-おとなしい,おとなしい,quiet,おとなしい人,a quiet person
-落ち着いてる,おちついてる,calm,落ち着いてる人,a calm person
-頼もしい,たのもしい,reliable,頼もしい人,a reliable person
-大雑把,おおざっぱ,rough,大雑把な人,a rough person
-いい加減,いいかげん,irresponsible,いい加減な人,an irresponsible person
-だらしない,だらしない,sloppy,だらしない人,a sloppy person
-不潔,ふけつ,unclean,不潔な人,an unclean person
-厚かましい,あつかましい,impudent,厚かましい人,an impudent person
-図々しい,ずうずうしい,impudent,図々しい人,an impudent person
-欲張り,よくばり,greedy,欲張りな人,a greedy person
-強引,ごういん,overbearing,強引な人,an overbearing person
-乱暴,らんぼう,rough,乱暴な人,a rough person
-生意気,なまいき,impertinent,生意気な人,an impertinent person
-わがまま,わがまま,selfish,わがままな人,a selfish person
-プライドが高い,ぷらいどがたかい,have a high pride,プライドが高い人,a person with a high pride
-そそっかしい,そそっかしい,absent-minded,そそっかしい人,an absent-minded person
-呑気,のんき,optimistic,呑気な人,an optimistic person
-短期,たんき,short-termpered,短期の人,a short-termpered person
-気が短い,きがみじかい,short-tempered,気が短い人,a short-tempered person
-気が小さい,きがちいさい,be timid,気が小さい人,a timid person
-あわれ,あわれ,miserable,あわれな人,a miserable person
-くどい,くどい,verbose,くどい人,a verbose person
-卑怯,ひきょう,cowardly,卑怯な人,a cowardly person
-ずるい,ずるい,sly,ずるい人,a sly person
-ダサい,ださい,uncool,ダサい人,an uncool person
-上品,じょうひん,elegant,上品な人,an elegant person
-品がある,ひんがある,refined,品がある人,a refined person
-品がいい,ひんがいい,refined,品がいい人,a refined person
-下品,げひん,vulgar,下品な人,a vulgar person
-品がない,ひんがない,vulgar,品がない人,a vulgar person
-かっこいい,かっこいい,cool,かっこいい人,a cool person
-かっこ悪い,かっこわるい,uncool,かっこ悪い人,an uncool person
-気が強い,きがつよい,aggressive,気が強い人,an aggressive person
-気が弱い,きがよわい,timid,気が弱い人,a timid person
-器用,きよう,skillful,器用な人,a skillful person
-不器用,ぶきよう,clumsy,不器用な人,a clumsy person
-真面目,まじめ,hardworking,真面目な人,a hardworking person
-不真面目,ふまじめ,irresponsible,不真面目な人,an irresponsible person
+思いやりがある,おもいやりがある,considerate,思いやりがある人,considerate person
+若々しい,わかわかしい,youthful,若々しい人,youthful person
+生き生きとした,いきいきとした,lively,生き生きとした人,lively person
+朗らか,ほがらか,cheerful,朗らかな人,cheerful person
+爽やか,さわやか,refreshing,爽やかな人,refreshing person
+人懐っこい,ひとなつっこい,friendly,人懐っこい人,friendly person
+無邪気,むじゃき,innocent,無邪気な人,innocent person
+マナーがいい,まなーがいい,well-mannered,マナーがいい人,well-mannered person
+センスがいい,せんすがいい,have good taste,センスがいい人,person with good taste
+要領がいい,ようりょうがいい,efficient,要領がいい人,efficient person
+穏やか,おだやか,mild,穏やかな人,mild person
+おとなしい,おとなしい,quiet,おとなしい人,quiet person
+落ち着いてる,おちついてる,calm,落ち着いてる人,calm person
+頼もしい,たのもしい,reliable,頼もしい人,reliable person
+大雑把,おおざっぱ,rough,大雑把な人,rough person
+いい加減,いいかげん,irresponsible,いい加減な人,irresponsible person
+だらしない,だらしない,sloppy,だらしない人,sloppy person
+不潔,ふけつ,unclean,不潔な人,unclean person
+厚かましい,あつかましい,impudent,厚かましい人,impudent person
+図々しい,ずうずうしい,impudent,図々しい人,impudent person
+欲張り,よくばり,greedy,欲張りな人,greedy person
+強引,ごういん,overbearing,強引な人,overbearing person
+乱暴,らんぼう,rough,乱暴な人,rough person
+生意気,なまいき,impertinent,生意気な人,impertinent person
+わがまま,わがまま,selfish,わがままな人,selfish person
+プライドが高い,ぷらいどがたかい,have a high pride,プライドが高い人,person with a high pride
+そそっかしい,そそっかしい,absent-minded,そそっかしい人,absent-minded person
+呑気,のんき,optimistic,呑気な人,optimistic person
+短期,たんき,short-termpered,短期の人,short-termpered person
+気が短い,きがみじかい,short-tempered,気が短い人,short-tempered person
+気が小さい,きがちいさい,be timid,気が小さい人,timid person
+あわれ,あわれ,miserable,あわれな人,miserable person
+くどい,くどい,verbose,くどい人,verbose person
+卑怯,ひきょう,cowardly,卑怯な人,cowardly person
+ずるい,ずるい,sly,ずるい人,sly person
+ダサい,ださい,uncool,ダサい人,uncool person
+上品,じょうひん,elegant,上品な人,elegant person
+品がある,ひんがある,refined,品がある人,refined person
+品がいい,ひんがいい,refined,品がいい人,refined person
+下品,げひん,vulgar,下品な人,vulgar person
+品がない,ひんがない,vulgar,品がない人,vulgar person
+かっこいい,かっこいい,cool,かっこいい人,cool person
+かっこ悪い,かっこわるい,uncool,かっこ悪い人,uncool person
+気が強い,きがつよい,aggressive,気が強い人,aggressive person
+気が弱い,きがよわい,timid,気が弱い人,timid person
+器用,きよう,skillful,器用な人,skillful person
+不器用,ぶきよう,clumsy,不器用な人,clumsy person
+真面目,まじめ,hardworking,真面目な人,hardworking person
+不真面目,ふまじめ,irresponsible,不真面目な人,irresponsible person
 
 二日目
-
+豊か,ゆたか,rich,豊かな国,rich country
+快適,かいてき,comfortable,快適な暮らし,comfortable life
+楽,らく,easy,楽な方法,easy way
+派手,はで,flashy,派手なシャツ,flashy shirt
+粗末,そまつ,plain,粗末な食事,plain food
+惨め,みじめ,miserable,惨めな暮らし,miserable life
+厄介,やっかい,troublesome,厄介な問題,troublesome problem
+曖昧,あいまい,vague,曖昧な返事,vague reply
+ありふれた,ありふれた,ordinary,ありふれた話,ordinary story
+慌ただしい,あわただしい,busy,慌ただしい一日,busy day
+騒がしい,さわがしい,noisy,騒がしい通り,noisy street
+騒々しい,そうぞうしい,noisy,騒々しい声,noisy voice
+やかましい,やかましい,loud,彼はファッションにやかましい,he has loud views on fashion
+めでたい,めでたい,joyous,めでたい日,joyous day
+等しい,ひとしい,equal,長さが等しい,equal length
+醜い,みにくい,ugly,醜い争い,ugly dispute
+荒っぽい,あらっぽい,rough,荒っぽい言葉,rough language
+空っぽ,からっぽ,empty,空っぽの財布,empty wallet
+真っ黒,まっくろ,pitch black,焼きすぎて魚が真っ黒になる,fish is buring on the grill
+真っ青,まっさお,deep blue,顔が真っ青になる,face turns pale
+真っ赤,まっか,deep red,顔が真っ赤になる,face turns red
+真っ白,まっしろ,pure white,頭の中が真っ白になる,be totally lost
 
 三日目
-
+睨む,にらむ,to glare at,彼は私を睨んだ,he glared at me
+覗く,のぞく,to peek,部屋の中を覗く,peek into the room
+咥える,くわえる,to hold in one's mouth,煙草を咥える,hold a cigarette in one's mouth
+かじる,かじる,to bite,りんごをかじる,bite an apple
+囁く,ささやく,to whisper,耳元で囁く,whisper in one's ear
+頷く,うなずく,to nod,彼は頷いた,he nodded
+担ぐ,かつぐ,to carry on one's shoulder,荷物を担ぐ,carry a load on one's shoulder
+抱える,かかえる,to hold in one's arms,子供を抱える,hold a child in one's arms
+ふらさげる,ふらさげる,to hang,カゴをふらさげる,hold a basket off from one's arm
+つく,つく,to place,肘をつく,rest one's elbow on the table
+触る,さわる,to touch,犬に触る,touch a dog
+かく,かく,to scratch,頭をかく,scratch one's head
+つっこむ,つっこむ,to thrust,手をポケットにつっこむ,thrust one's hands into one's pocket
+挟む,はさむ,to pinch,パンにハムを挟む,put ham in a sandwich
+くっつける,くっつける,to stick,ノリで紙をくっつける,stick paper with glue
+蛇口,じゃぐち,faucet,蛇口をひねる,turn on the faucet
+ひねる,ひねる,to twist,蛇口をひねる,turn on the faucet
+曲げる,まげる,to bend,膝を曲げる,bend one's knees
+またぐ,またぐ,to step over,溝をまたぐ,step over a ditch
+つまずく,つまずく,to stumble,石につまずく,stumble over a stone
+滑る,すべる,to slip,雪道で滑る,slip on a snowy road
+じゃがむ,じゃがむ,to sit down,道路でじゃがむ,sit down on the road
+ねじる,ねじる,to twist,体をねじる,twist one's body
+持たれる,もたれる,to lean against,壁にもたれる,lean against the wall
+ぶつかる,ぶつかる,to bump into,壁にぶつかる,bump into a wall
+すれ違う,すれちがう,to go by,自転車とすれ違う,go by a bicycle
+這う,はう,to crawl,地面を這う,crawl on the ground
+お辞儀,おじぎ,bow,お辞儀をする,to bow
 
 四日目
-
+悔しい,くやしい,regrettable,悔しい結果,regrettable result
+悔やむ,くやむ,to regret,失敗を悔やむ,regret a failure
+辛い,つらい,painful,辛い経験,painful experience
+情けない,なさけない,miserable,情けない状態,miserable state
+申し訳ない,もうしわけない,shameful,今日は遅れてきてしまって、申し訳ありません,Sorry I'm late today
+残念,ざんねん,pity,残念な結果,pityful result
+やむが得ない,やむがえない,unavoidable,この決定はやむを得ない,this decision is unavoidable
+仕方がない,しかたがない,can't be helped,仕方がないので諦めるしかない,there is no choice but to give up
+しょうがない,しょうがない,can't be helped,しょうがない,it can't be helped
+疑問,ぎもん,question,疑問に思う,I doubt it
+不思議,ふしぎ,strange,昨日の出来事は不思議だった,yesterday's event was strange
+納得がいかない,なっとくがいかない,can't accept,なぜその決定が下されたのか納得がいかない,I can't accept why that decision was made
+納得がいく,なっとくがいく,be satisfied,チーム全体がこの計画に納得がいく,the whole team is satisfied with this plan
+飽きる,あきる,to get tired of,彼女の話には飽きた,I'm tired of her story
+呆れる,あきる,to be amazed,彼の行動には呆れた,I was amazed at his action
+諦める,あきらめる,to give up,彼は諦めた,he gave up
+慌てる,あわてる,to panic,遅刻しそうで慌てて家を出た,I was about to be late so I left home in a hurry
+焦る,あせる,to be in a hurry,時間がなくて焦っている,I'm in a hurry because I don't have much time
+躊躇う,ためらう,to hesitate,大きな決断に躊躇うことがある,There are times when I hesitate in making big decisions
+憧れる,あこがれる,to long for,彼の才能に憧れる,I long for his talent
+落ち込む,おちこむ,to feel down,失敗して落ち込んでいる,I'm feeling down after a failure
+恋しい,こいしい,missed,彼との思い出が恋しい,I miss the memories with him
+懐かしい,なつかしい,nostalgic,懐かしい場所に訪れる,Visit a nostalgic place
+ありがたい,ありがたい,grateful,助けてくれて本当にありがたい,I'm really grateful for your help
+懐かしい,なつかしい,nostalgic,懐かしい友達と再会する,Reunite with nostalgic friends
+ありがたい,ありがたい,grateful,親の支援には本当にありがたい, I'm truly grateful for my parents' support
+みっともない,みっともない,shameful,恥ずかしい行動をしてみっともない,I did something shameful and embarrassing
+馬鹿らしい,ばからしい,absurd,彼の言い訳は馬鹿らしい,His excuse is absurd
+惜しい,おしい,regrettable,逃したチャンスが惜しい,It's regrettable that I missed the opportunity
+憎い,にくい,dislike,彼の行動が憎い,I dislike his behavior
+憎らしい,にくらしい,disagreeable,hateful,彼女の嘘は憎らしい,Her lies are hateful
+面倒くさい,めんどうくさい,bothersome,この問題は面倒くさい,This problem is bothersome
+面倒,めんどう,troublesome,彼の態度が面倒だ,His attitude is troublesome
+夢中,むちゅう,engrossed,彼は仕事に夢中だ,He is engrossed in his work
+退屈する,たいくつする,to get bored,何もすることがなくて退屈している,I'm bored with nothing to do
+悩む,なやむ,to worry,将来のことで悩んでいる,I'm worried about the future
+祈る,いのる,to pray,幸せを祈る,I pray for happiness
+誓う,ちかう,to vow,永遠の愛を誓う,I vow eternal love
+拝む,おがむ,to worship,神社でお参りして拝む,Worship and pray at the shrine
 
 五日目
-
+尊敬する,そんけいする,to respect,彼の行動には尊敬する,I respect his actions
+偉い,えらい,admirable,偉い人になりたい,I want to become an admirable person
+信用する,しんようする,to trust,彼の言葉を信用する,I trust his words
+疑う,うたがう,to doubt,彼の言動に疑いを抱く,I doubt his words and actions
+いじめる,いじめる,to bully,子供たちがいじめを受けている,The children are being bullied
+やっつける,やっつける,to defeat,相手をやっつけて勝つ,Defeat the opponent and win
+からかう,からかう,to tease,友達を優しくからかう,Tease a friend playfully
+バカにする,ばかにする,to make fun of,人をバカにすることは良くない,Making fun of people is not good
+貶す,けなす,to disparage,人を貶すような言動は避けるべきだ,One should avoid behaviors that disparage others
+責める,せめる,to blame,失敗を責めずに次に進む,Move forward without blaming yourself for mistakes
+脅かす,おどかす,to threaten,彼を脅かすような行動はやめなさい,Stop behaviors that threaten him
+頼る,たよる,to rely on,困ったときに友達に頼る,Rely on friends when in trouble
+頼りにする,たよりにする,to depend on,彼の助言を頼りにする,Depend on his advice
+慰める,なぐさめる,to comfort,友達を慰めてあげてください,Please comfort your friend
+許す,ゆるす,to forgive,過去の過ちを許すことは大切だ,Forgiving past mistakes is important
+裏切る,うらぎる,to betray,信頼を裏切る行為は許されない,Betraying trust is unforgivable
+騙す,だます,to deceive,人を騙すことは良くない,Deceiving people is not good
+傷つける,きずつける,to hurt,言葉で相手を傷つけないように注意する,Be careful not to hurt others with your words
+避ける,さける,to avoid,問題を避けずに解決する,Address problems instead of avoiding them
+放っておく,ほうっておく,to leave alone,彼女を一人に放っておくべきだ,She should be left alone
+任せる,まかせる,to entrust,プロジェクトを彼に任せる,Entrust the project to him
+微笑む,ほほえむ,to smile,彼女の微笑みは素敵だ,Her smile is lovely
+従う,したがう,to obey,ルールに従うことは重要だ,It is important to obey the rules
+逆らう,さからう,to oppose,意見に逆らってディスカッションをする,Engage in a discussion by opposing opinions
+詫びる,わびる,to apologize,遅れてきたことを詫びる,I apologize for being late
+感謝する,かんしゃする,to express gratitude,助けてくれて感謝しています,I am grateful for your help
+冗談,じょうだん,joke,彼の冗談はいつも面白い,His jokes are always funny
+嫌味,いやみ,sarcasm,嫌味な言葉を使うべきではない,Using sarcastic words is not advisable
+文句,もんく,complaint,仕事に文句を言わずに努力する,Put effort into work without complaining
+嘘,うそ,lie,嘘は信頼を傷つける,Lies damage trust
+嘘つき,うそつき,liar,嘘つきは信じられない,Liars are not to be trusted
+黙る,だまる,to keep silent,議論が激しいときは黙って聞くことも大切だ,It's important to stay silent and listen during intense discussions
+自慢する,じまんする,to boast,成功を自慢することは控えめにするべきだ,Boasting about success should be done modestly
+威張る,いばる,to brag,成功を威張りすぎないようにする,Avoid bragging too much about success
+ふざける,ふざける,to joke around,真面目な場面でふざけるべきではない,Joking around should be avoided in serious situations
+真似,まね,imitation,彼の行動を真似する,Imitate his actions
+悪口,わるくち,slander,他人の悪口を言うことはやめるべきだ,Avoid speaking ill of others
+恵まれる,めぐまれる,to be blessed,幸せな状況に恵まれている,I am blessed with a happy situation
+揉める,もめる,to have a dispute,プロジェクトで意見の不一致が揉めている,There is a dispute over opinions in the project
+態度,たいど,attitude,態度が重要だ,Attitude is important
+改める,あらためる,to change,自分の態度を改める,Change one's attitude
+人のせいにする,ひとのせいにする,to blame others,失敗を人のせいにするのは良くない,It's not good to blame others for your own mistakes
 
 六日目

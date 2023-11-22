@@ -1,12 +1,12 @@
 一日目
-老人ホーム,ろうじんほーむ,nursing home,老人ホームのホームヘルパー,a nursing home helper
-ホームヘルパー,ほーむへるぱー,nursing home helper,老人ホームのホームヘルパー,a nursing home helper
-語学学校,ごがくがっこう,language school,語学学校の講師,a language school teacher
-講師,こうし,teacher,語学学校の講師,a language school teacher
-事務員,じむいん,office worker,会社の事務員,a clerk
+老人ホーム,ろうじんほーむ,nursing home,老人ホームのホームヘルパー,nursing home helper
+ホームヘルパー,ほーむへるぱー,nursing home helper,老人ホームのホームヘルパー,nursing home helper
+語学学校,ごがくがっこう,language school,語学学校の講師,language school teacher
+講師,こうし,teacher,語学学校の講師,language school teacher
+事務員,じむいん,office worker,会社の事務員,clerk
 関係,かんけい,relationship,コンピューター関係の仕事,IT related job
-オーナー,おーなー,owner,レストランのオーナー,a restaurant owner
-従業員,じゅうぎょういん,employee,ホテルの従業員,a hotel worker
+オーナー,おーなー,owner,レストランのオーナー,restaurant owner
+従業員,じゅうぎょういん,employee,ホテルの従業員,hotel worker
 フリーター,ふりーたー,freeter,彼は今フリーターで、アルバイトをしている,he is a freelancer and works part-time
 就職する,しゅうしょくする,to get a job,彼は就職するために、日本語を勉強している,he is studying japanese to get a job
 就職活動,しゅうしょくかつどう,job hunting,彼は就職活動中で、履歴書や面接の準備をしてる,he is job hunting and preparing his resume and interview
@@ -27,7 +27,7 @@
 面接,めんせつ,interview,面接で緊張する,get nervous at an interview
 緊張する,きんちょうする,to be nervous,面接で緊張する,get nervous at an interview
 ふさわしい服装,ふさわしいふくそう,appropriate clothing,面接にふさわしい服装,appropriate clothing for an interview
-勤務時間,きんむじかん,working hours,八時間勤務,an eight hour day
+勤務時間,きんむじかん,working hours,八時間勤務,eight hour day
 時給,じきゅう,hourly wage,時給で働く,work for an hourly wage
 交通費,こうつうひ,transportation expenses,交通費を支給される,be reimbursed for transportation expenses
 支給する,しきゅうする,to reimburse,交通費を支給される,be reimbursed for transportation expenses
@@ -55,7 +55,7 @@
 休み,やすみ,holiday,休みを取る,take a holiday
 有給休暇,ゆうきゅうきゅうか,paid vacation,有給休暇を取る,take paid vacation
 休暇,きゅうか,vacation,休暇を取る,take a vacation
-やりがい,やりがい,sense of fulfillment,やりがいのある仕事,a fulfilling job
+やりがい,やりがい,sense of fulfillment,やりがいのある仕事,fulfilling job
 生きがい,いきがい,reason for living,仕事が生きがいだ,I live for work
 休む間,やすむま,break,休む間がない,never have time to rest
 もたない,もたない,to not last,体がもたない,can't keep this pace up
@@ -65,8 +65,8 @@
 ふりをする,ふりをする,to pretend,具合が悪いふりをする,pretend to be sick
 怠ける,なまける,to neglect,仕事を怠ける,neglect one's work
 サボる,さぼる,to skip,仕事をサボる,skip work
-怠け者,なまけもの,a lazy person,怠け者になる,become a lazy person
-働き者,はたらきもの,a hard worker,働き者になる,become a hard worker
+怠け者,なまけもの,lazy person,怠け者になる,become a lazy person
+働き者,はたらきもの,hard worker,働き者になる,become a hard worker
 ミス,みす,mistake,仕事でミスをする,make a mistake at work
 言い訳,いいわけ,excuse,遅刻の言い訳をする,make an excuse for being late
 ゴマ,ごま,flattery,上司にゴマをする,flatter the boss
@@ -214,7 +214,7 @@
 余白,よはく,margins,余白を多くする,make the margins wider
 標準サイズ,ひょうじゅんさいず,standard size,標準サイズの用紙,standard size paper
 ずれる,ずれる,to be out of alignment,印刷がずれる,the print is askew
-手間,てま,a hassle,手間がかかる,it takes a lot of work
+手間,てま,hassle,手間がかかる,it takes a lot of work
 かかる,かかる,to take,手間がかかる,it takes a lot of work
 省く,はぶく,to cut down,手間を省く,saves a lot of work
 切り替える,きりかえる,to switch,表示を切り替える,switch the display
