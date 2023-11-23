@@ -1,6 +1,7 @@
 import n2_week1 from './vocab/n2/第一週.csv';
 import n2_week2 from './vocab/n2/第二週.csv';
 import n2_week3 from './vocab/n2/第三週.csv';
+import n2_week4 from './vocab/n2/第四週.csv';
 import n2_week6 from './vocab/n2/第六週.csv';
 
 export interface Vocab {
@@ -56,6 +57,7 @@ const fetchVocab = async (): Promise<JLPTs> => {
       '第一週': parseData(n2_week1),
       '第二週': parseData(n2_week2),
       '第三週': parseData(n2_week3),
+      '第四週': parseData(n2_week4),
       '第六週': parseData(n2_week6),
     },
   };
