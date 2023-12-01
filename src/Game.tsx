@@ -1,7 +1,8 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { Day, Level, Vocab, Week } from './vocab';
 import Round from './Round';
 import styled from 'styled-components';
+import GamemodeContext from './GamemodeContext';
 
 const WordsLeft = styled.div`
   position: absolute;
@@ -49,14 +50,6 @@ const createVocabListFromDay = (day: Day): Vocab[] => {
   return day;
 };
 
-const selectVocab = (vocabList: Vocab[], exclude: Vocab[]): Vocab => {
-  const vocab = vocabList[Math.floor(Math.random() * vocabList.length)];
-  if (exclude.includes(vocab)) {
-    return selectVocab(vocabList, exclude);
-  }
-  return vocab;
-}
-
 interface GameProps {
   vocab: GameVocab[];
 }
@@ -64,6 +57,8 @@ interface GameProps {
 function Game(props: GameProps) {
   const [round, setRound] = useState<RoundInfo | null>(null);
   const [incorrect, setIncorrect] = useState<number>(0);
+
+  const gamemode = useContext(GamemodeContext);
 
   const vocabRemaining: GameVocab[] = useMemo(() => {
     const list: GameVocab[] = [];
@@ -75,6 +70,16 @@ function Game(props: GameProps) {
     list.sort(() => Math.random() - 0.5);
     return list;
   }, [props.vocab]);
+
+  const selectVocab = (vocabList: Vocab[], exclude: Vocab[]): Vocab => {
+    const vocab = vocabList[Math.floor(Math.random() * vocabList.length)];
+    if (exclude.find((v) => v.word === vocab.word 
+        || (gamemode.furiganaMode === false && v.translation == vocab.translation)
+        || (gamemode.furiganaMode === true && v.furigana == vocab.furigana)) != null) {
+      return selectVocab(vocabList, exclude);
+    }
+    return vocab;
+  }
 
   const nextRound = useCallback(() => {
     const vocab = vocabRemaining.shift();
