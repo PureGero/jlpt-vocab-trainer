@@ -2,7 +2,7 @@ import { useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { Day, Level, Vocab, Week } from './vocab';
 import Round from './Round';
 import styled from 'styled-components';
-import GamemodeContext from './GamemodeContext';
+import GamemodeContext, { GamemodeContextType } from './GamemodeContext';
 
 const WordsLeft = styled.div`
   position: absolute;
@@ -47,8 +47,18 @@ const createVocabListFromWeek = (week: Week): Vocab[] => {
 };
 
 const createVocabListFromDay = (day: Day): Vocab[] => {
-  return day;
+  return day
 };
+
+const selectVocab = (vocabList: Vocab[], exclude: Vocab[], gamemode: GamemodeContextType): Vocab => {
+  const vocab = vocabList[Math.floor(Math.random() * vocabList.length)];
+  if (exclude.find((v) => v.word === vocab.word 
+      || (gamemode.furiganaMode === false && v.translation === vocab.translation)
+      || (gamemode.furiganaMode === true && v.furigana === vocab.furigana)) != null) {
+    return selectVocab(vocabList, exclude, gamemode);
+  }
+  return vocab;
+}
 
 interface GameProps {
   vocab: GameVocab[];
@@ -71,16 +81,6 @@ function Game(props: GameProps) {
     return list;
   }, [props.vocab]);
 
-  const selectVocab = (vocabList: Vocab[], exclude: Vocab[]): Vocab => {
-    const vocab = vocabList[Math.floor(Math.random() * vocabList.length)];
-    if (exclude.find((v) => v.word === vocab.word 
-        || (gamemode.furiganaMode === false && v.translation == vocab.translation)
-        || (gamemode.furiganaMode === true && v.furigana == vocab.furigana)) != null) {
-      return selectVocab(vocabList, exclude);
-    }
-    return vocab;
-  }
-
   const nextRound = useCallback(() => {
     const vocab = vocabRemaining.shift();
 
@@ -88,9 +88,9 @@ function Game(props: GameProps) {
 
     if (vocab != null) {
       options.push(vocab?.vocab);
-      options.push(selectVocab(createVocabListFromDay(vocab?.day), options));
-      options.push(selectVocab(createVocabListFromWeek(vocab?.week), options));
-      options.push(selectVocab(createVocabListFromLevel(vocab?.level), options));
+      options.push(selectVocab(createVocabListFromDay(vocab?.day), options, gamemode));
+      options.push(selectVocab(createVocabListFromWeek(vocab?.week), options, gamemode));
+      options.push(selectVocab(createVocabListFromLevel(vocab?.level), options, gamemode));
     }
 
     setRound({
@@ -99,7 +99,7 @@ function Game(props: GameProps) {
     });
 
     window.localStorage.setItem('completed', ((parseInt(window.localStorage.getItem('completed') || '0') || 0) + 1).toString());
-  }, [vocabRemaining]);
+  }, [vocabRemaining, gamemode]);
 
   const onIncorrect = () => {
     vocabRemaining.splice(2, 0, round?.vocab!);
